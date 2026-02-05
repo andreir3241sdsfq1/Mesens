@@ -1,0 +1,6 @@
+1 скачайте Visual Studio (не Visual Studio CODE)
+
+2 откройе папку файл>открыть>Folder
+
+3 в консоль VS введите:
+cl /LD /Fe:mesens.dll mesens.cpp imgui\imgui.cpp imgui\imgui_draw.cpp imgui\imgui_tables.cpp imgui\imgui_widgets.cpp imgui\imgui_impl_dx9.cpp imgui\imgui_impl_win32.cpp /I"MH/include" /I"imgui" /link MH\lib\libMinHook.x86.lib d3d9.lib user32.lib gdi32.lib ws2_32.lib shell32.lib /SUBSYSTEM:WINDOWS /std:c++17 /EHsc
